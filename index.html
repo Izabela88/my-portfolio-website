@@ -19,31 +19,31 @@
 
 <body>
     <!-- https://codepen.io/CiTA/pen/bgjKKE   -->
-    <!-- header -->
+    <!-- menu -->
     <div class="wrapper">
         <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true" />
-        <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="false"
+        <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="true"
             aria-expanded="false" aria-label="Navigation button">
             <span class="menu-toggler__line"></span>
             <span class="menu-toggler__line"></span>
             <span class="menu-toggler__line"></span>
         </label>
-        <nav id="sidebar" class="sidebar" role="navigation" aria-labelledby="menuTogglerLabel" aria-hidden="true">
+        <nav id="sidebar" class="sidebar" role="navigation" aria-labelledby="menuTogglerLabel">
             <ul id="menubar" class="menu" role="menubar" aria-orientation="vertical">
-                <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem" tabindex="-1">Home</a>
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="#home" role="menuitem">Home</a>
                 </li>
-                <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem"
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="#" role="menuitem"
                         tabindex="-1">Portfolio</a>
                 </li>
-                <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem"
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="#" role="menuitem"
                         tabindex="-1">Skills</a></li>
-                <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem" tabindex="-1">About</a>
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="#" role="menuitem">About</a>
                 </li>
-                <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem"
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="#" role="menuitem"
                         tabindex="-1">Contact</a></li>
             </ul>
         </nav>
-        <main class="content">
+        <main id="home" class="content">
             <img class="hero-img" src="/assets/images/jelly-yellow-snail-waving-hand.png" alt="snail">
             <img class="hero-img-two" src="/assets/images/jelly-yellow-sun-with-rays-2.png" alt="sun">
             <img class="logo" src="/assets/images/logo.png" alt="logo">

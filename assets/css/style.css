@@ -78,7 +78,6 @@ label {
 /* menu */
 .wrapper {
     min-width: 100vw;
-    background: AliceBlue;
     display: flex;
     height: 100vh;
 }
@@ -89,16 +88,18 @@ label {
 }
 
 .sidebar {
-    width: var(--sidebar-width);
-    transform: translateX(calc(var(--sidebar-width) * -1));
     background: linear-gradient(to bottom right, #F6A50C, Wheat);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 0;
     height: 100vh;
-    opacity: 0.5;
+    opacity: 1 ;
+    overflow-x: hidden;
+    z-index: 100000;
+    width: 100%;
+
 }
 
 .content {
@@ -127,6 +128,10 @@ label {
 .menu__link:focus,
 .menu__link:active {
     color: var(--black);
+}
+
+.sidebar.open {
+    width: 100%;
 }
 
 .menu-toggler {
@@ -187,7 +192,7 @@ label {
     transform: translateY(calc(-1 * var(--toggler-line-size) * (var(--toggler-line-number) - 1))) rotate(-45deg);
 }
 
-.input-toggler:checked~.sidebar {
+.sidebar.open {
     transform: translateX(0);
     opacity: 1;
     z-index: 10000;
@@ -234,7 +239,6 @@ label {
     width: 150px;
     height: 150px;
     top: 0;
-    left: 50%;
     border: 1px solid black;
     padding: 10px;
 
@@ -259,4 +263,68 @@ label {
     left: 0;
     height: 400px;
     width: 400px;
+}
+
+@media screen and (max-width: 1190px) {
+    /* home */
+    .main-txt {
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(255 255 255 / 50%);
+    }
+
+    .main-txt p {
+        font-size: 50px;
+    }
+
+    .menu__link {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .hero-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* home */
+    .hero-img-two {
+        display: none;
+    }
+
+    .icon {
+        height: 300px;
+        width: 300px;
+    }
+
+    .main-txt {
+        width: 90%;
+    }
+
+    .main-txt p {
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+
+    .main-txt a {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* home */
+    .main-txt p {
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    .main-txt a {
+        font-size: 15px;
+    }
+
+    .icon {
+        left: unset;
+    }
+
 }
