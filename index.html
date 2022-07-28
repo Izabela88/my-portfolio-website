@@ -1,97 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="portfolio, full stack developer, developer, united kingdom, wolverhampton"
-    />
+    <meta name="keywords" content="portfolio, full stack developer, developer, united kingdom, wolverhampton" />
     <meta name="theme-color" content="#F6A50C" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- https://codepen.io/CiTA/pen/bgjKKE   -->
     <!-- header -->
-    <header id="header">
-      <div id="hamburger-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <div class="logo">
-        <a class="scroll close-sidebar" href="#home-section"
-          ><img src="assets/images/logo.png" alt="Logo"
-        /></a>
-      </div>
-      <nav id="nav">
-        <div id="my-sidebar" class="sidebar">
-          <div class="close-sidebar close-btn">
-            <i class="fas fa-times"></i>
-          </div>
-          <ul class="nav-list">
-            <li>
-              <a
-                class="scroll close-sidebar nav-link active"
-                href="#home-section"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a class="scroll close-sidebar nav-link" href="#"
-                >About</a
-              >
-            </li>
-            <li>
-              <a class="scroll close-sidebar nav-link" href="#"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a class="scroll close-sidebar nav-link" href="#"
-                >Projects</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- hero section -->
-    <main id="home-section" class="section">
-      <div class="basket">
-        <i class="fas fa-shopping-basket"></i
-        ><span class="counter-icon" id="items-counter">0</span>
-      </div>
-      <div class="logo-home">
-        <img src="assets/images/logo.png" alt="Logo" />
-      </div>
-      <div class="bg-shape"></div>
-      <div class="girl-img"></div>
-      <div class="container">
-        <div class="drops-one"></div>
-        <div class="red-circle-big">
-          <div class="cupcake-img"></div>
-        </div>
-        <div class="home-text">
-          <h1>cupcakes made with love!</h1>
-          <div class="btns">
-            <div class="brown-btn">
-              <a class="scroll" href="#products-section">Products</a>
+    <div class="wrapper">
+        <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true" />
+        <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="false"
+            aria-expanded="false" aria-label="Navigation button">
+            <span class="menu-toggler__line"></span>
+            <span class="menu-toggler__line"></span>
+            <span class="menu-toggler__line"></span>
+        </label>
+        <nav id="sidebar" class="sidebar" role="navigation" aria-labelledby="menuTogglerLabel" aria-hidden="true">
+            <ul id="menubar" class="menu" role="menubar" aria-orientation="vertical">
+                <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem" tabindex="-1">Home</a>
+                </li>
+                <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem"
+                        tabindex="-1">Portfolio</a>
+                </li>
+                <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem"
+                        tabindex="-1">Skills</a></li>
+                <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem" tabindex="-1">About</a>
+                </li>
+                <li class="menu__item" role"none"><a class="menu__link" href="#" role="menuitem"
+                        tabindex="-1">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <img class="hero-img" src="/assets/images/jelly-yellow-snail-waving-hand.png" alt="snail">
+            <img class="hero-img-two" src="/assets/images/jelly-yellow-sun-with-rays-2.png" alt="sun">
+            <img class="logo" src="/assets/images/logo.png" alt="logo">
+            <img class="icon" src="/assets/images/jelly-black-character-droplet-1.png" alt="stripes">
+            <div class="container">
+                <div class="main-txt">
+                    <p>Hello beautiful people visiting my portfolio website! I am Izabela - Full Stack Developer</p>
+                    <a href="#">check my projects</a>
+                </div>
             </div>
-            <div class="brown-btn">
-              <a class="scroll" href="#about-section"> About Us</a>
-            </div>
-          </div>
-          <p>for the preparation we use only organic products!</p>
-          <div class="strawberrys-bowl">
-            <div class="drops-two"></div>
-            <img
-              src="assets/images/strawberry.png"
-              alt="Strawberry in the bowl"
-            />
-          </div>
-          <div class="star"></div>
-        </div>
-        <div class="cloud"></div>
-        <div class="happy-girl"></div>
-      </div>
-    </main>
-  </head>
-  <body></body>
+        </main>
+    </div>
+    <script src="assets/js/navbar.js"></script>
+</body>
+
 </html>
