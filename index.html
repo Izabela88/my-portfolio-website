@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+
     <title>Portfolio</title>
 </head>
 
@@ -35,7 +37,7 @@
                 <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="#" role="menuitem"
                         tabindex="-1">Portfolio</a>
                 </li>
-                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="#" role="menuitem"
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="#skills" role="menuitem"
                         tabindex="-1">Skills</a></li>
                 <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="#" role="menuitem">About</a>
                 </li>
@@ -44,19 +46,58 @@
             </ul>
         </nav>
         <main id="home" class="content">
-            <img class="hero-img" src="/assets/images/jelly-yellow-snail-waving-hand.png" alt="snail">
-            <img class="hero-img-two" src="/assets/images/jelly-yellow-sun-with-rays-2.png" alt="sun">
-            <img class="logo" src="/assets/images/logo.png" alt="logo">
-            <img class="icon" src="/assets/images/jelly-black-character-droplet-1.png" alt="stripes">
+            <img id="snail" class="hero-img" src="/assets/images/jelly-yellow-snail-waving-hand.png" alt="snail">
+            <img id="sun" class="hero-img-two" src="/assets/images/jelly-yellow-sun-with-rays-2.png" alt="sun">
+            <img id="logo" class="logo" src="/assets/images/logo.png" alt="logo">
+            <img id="monster" class="icon" src="/assets/images/jelly-black-character-droplet-1.png" alt="stripes">
             <div class="container">
-                <div class="main-txt">
-                    <p>Hello beautiful people visiting my portfolio website! I am Izabela - Full Stack Developer</p>
+                <div id="text" class="main-txt">
+                    <p >Hello beautiful people visiting my portfolio website! I am Izabela - Full Stack Developer</p>
                     <a href="#">check my projects</a>
                 </div>
             </div>
         </main>
     </div>
+    <!-- skills -->
+    <section id="skills" class="section">
+        <div class="wrapper">
+            <h2>my skills</h2>
+            <div class="container">
+                <div class="snail">
+                    <img class="s-snail" src="/assets/images/jelly-character-coding.png" alt="snail">
+                    <img class="s-lines" src="/assets/images/jelly-tree-yellow-lines.png" alt="lines">
+                    <img  class="s-bulb" src="/assets/images/jelly-yellow-big-lamp.png" alt="bulb">
+                </div>
+                <div class="skill-icon css">
+                    <img src="/assets/images/css-3.png" alt="icon">
+                </div>
+                <div class="skill-icon django">
+                    <img src="/assets/images/django.svg" alt="icon">
+                </div>
+                <div class="skill-icon github">
+                    <img src="/assets/images/github.png" alt="icon">
+                </div>
+                <div class="skill-icon html">
+                    <img src="/assets/images/html-5.png" alt="icon">
+                </div>
+                <div class="skill-icon js">
+                    <img src="/assets/images/js.png" alt="icon">
+                </div>
+                <div class="skill-icon postgress">
+                    <img src="/assets/images/postgress.png" alt="icon">
+                </div>
+                <div class="skill-icon python">
+                    <img src="/assets/images/python.png" alt="icon">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/parallax.js"></script>
 </body>
 
 </html>
+
+<!-- html <a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons">Html 5 icons created by Freepik - Flaticon</a> -->
