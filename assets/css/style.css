@@ -333,10 +333,9 @@ label {
 
 .main-txt a {
     font-family: var(--text);
-    font-size: 45px;
+    font-size: 30px;
     position: relative;
-    ;
-
+    text-transform: uppercase;
 }
 
 .logo {
@@ -681,6 +680,18 @@ label {
     transition-delay: 0.5s;
 
 }
+
+/* footer */
+footer {
+    height: 200px;
+    text-align: center;
+    font-family: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 
 @media screen and (max-width: 1190px) {
