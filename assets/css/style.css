@@ -397,7 +397,7 @@ label {
     width: 400px;
     height: 200px;
     position: absolute;
-    z-index: 10000000;
+    z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -408,6 +408,14 @@ label {
 .soc-link {
     height: 200px;
     width: 200px;
+}
+
+.linkedin-link {
+    animation: vibrate-1 1.2s linear infinite both;
+}
+
+.github-link {
+    animation: vibrate-1 1.3s linear infinite both;
 }
 
 /* skills */
@@ -434,6 +442,7 @@ label {
 
 .s-snail {
     height: 400px;
+    width: auto;
     position: absolute;
     bottom: 0;
 }

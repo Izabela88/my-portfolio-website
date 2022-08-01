@@ -1,8 +1,9 @@
-let sun = document.getElementById("sun");
-let monster = document.getElementById("monster");
-let text = document.getElementById("text");
-let logo = document.getElementById("logo");
-let snail = document.getElementById("snail");
+const sun = document.getElementById("sun");
+const monster = document.getElementById("monster");
+const text = document.getElementById("text");
+const logo = document.getElementById("logo");
+const snail = document.getElementById("snail");
+const skillsSnail = document.getElementById("s-snail");
 
 window.addEventListener("scroll", function () {
   var value = this.window.scrollY;
