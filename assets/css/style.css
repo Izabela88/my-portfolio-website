@@ -179,6 +179,24 @@ label {
     letter-spacing: 10px;
 }
 
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 20px;
+  
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 20px;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--toggler-color);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+  }
+
 /* menu */
 .wrapper {
     display: flex;
