@@ -10,6 +10,7 @@
     --text: 'Righteous', cursive;
     --text-2: 'Fredericka the Great', cursive;
     --link: #F6A50C;
+    --blue: #71d2e1;
     --black: #000000
 }
 
@@ -98,6 +99,11 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 h1,
 h2,
 h3,
@@ -152,6 +158,26 @@ label {
     align-items: center;
 }
 
+.section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+
+#skills h2,
+#projects h2 {
+    position: absolute;
+    font-family: var(--text-2);
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -50%);
+    font-size: 85px;
+    z-index: 100;
+    letter-spacing: 10px;
+}
 
 /* menu */
 .wrapper {
@@ -177,7 +203,6 @@ label {
     overflow-x: hidden;
     z-index: 100000;
     width: 100%;
-
 }
 
 .content {
@@ -270,12 +295,6 @@ label {
     transform: translateY(calc(-1 * var(--toggler-line-size) * (var(--toggler-line-number) - 1))) rotate(-45deg);
 }
 
-.sidebar.open {
-    transform: translateX(0);
-    opacity: 1;
-    z-index: 10000;
-}
-
 .sb-link {
     display: flex;
     height: 50px;
@@ -298,7 +317,8 @@ label {
     font-family: var(--text-2);
     padding: 77px;
     width: 70%;
-    position: relative;;
+    position: relative;
+    ;
 }
 
 .main-txt p {
@@ -306,14 +326,16 @@ label {
     text-transform: uppercase;
     line-height: 55px;
     letter-spacing: 3px;
-    position: relative;;
+    position: relative;
+    ;
 
 }
 
 .main-txt a {
     font-family: var(--text);
     font-size: 45px;
-    position: relative;;
+    position: relative;
+    ;
 
 }
 
@@ -331,16 +353,18 @@ label {
     position: absolute;
     height: 600px;
     right: 0;
-    bottom: 50px;
+    bottom: 0;
     z-index: 0;
     width: auto;
-
+    filter: drop-shadow(2px 1px 25px #767373);
 }
 
 .hero-img-two {
     position: absolute;
     left: 0;
     top: 0;
+    filter: drop-shadow(2px 1px 25px #767373);
+
 }
 
 .icon {
@@ -349,35 +373,21 @@ label {
     left: 0;
     height: 400px;
     width: 400px;
+    filter: drop-shadow(2px 1px 25px #767373);
 
 }
 
 /* skills */
-.section {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    z-index: 100;
-    background-color: #ffffff;
-}
-
 .skills-container {
     height: 800px;
     width: 1200px;
     position: absolute;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#skills h2 {
-    position: absolute;
-    font-family: var(--text-2);
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, -50%);
-}
+
 
 .snail {
     height: 600px;
@@ -398,6 +408,7 @@ label {
     left: 117px;
     top: 71px;
     transform: rotate(346deg);
+    filter: drop-shadow(0px 0px 10px #767373);
 }
 
 .s-lines {
@@ -406,6 +417,7 @@ label {
     left: 12px;
     top: -28px;
     transform: rotate(341deg);
+    filter: drop-shadow(0px 0px 10px #767373);
 }
 
 .skill-icon {
@@ -477,8 +489,8 @@ label {
 .python {
     height: 250px;
     width: 250px;
-    top: 135px;
-    left: -16px;
+    top: 26%;
+    left: 2%;
     -webkit-animation: vibrate-1 2s linear infinite both;
     animation: vibrate-1 2s linear infinite both;
 }
@@ -519,6 +531,154 @@ label {
 .python img {
     transform: rotate(348deg);
 }
+
+/* projects */
+#projects {
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+ 
+#projects h2 {
+    margin-top: 100px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 300px;
+    margin-bottom: 150px;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: var(--blue);
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--toggler-color);
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+    background: #ffffff;
+}
+
+.card:after {
+    position: absolute;
+    top: 30%;
+    left: -20%;
+}
+
+.card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+
+}
+
+.card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    filter: drop-shadow(2px 1px 8px #000000);
+}
+
+.card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: .5s;
+    z-index: 10;
+}
+
+.card:hover .contentBx {
+    height: 210px;
+}
+
+.card .contentBx h3 {
+    position: relative;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 20px;
+    font-family: var(--text);
+    font-size: 25px;
+}
+
+.card .contentBx .live-link,
+.card .contentBx .github-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.card:hover .contentBx .live-link {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.3s;
+}
+
+.card:hover .contentBx .github-link {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.4s;
+}
+
+
+.card .contentBx a {
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 10px auto;
+    text-decoration: none;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    font-family: var(--text);
+    width: 200px;
+    height: 50px;
+
+}
+
+.card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+
+}
+
 
 @media screen and (max-width: 1190px) {
 
