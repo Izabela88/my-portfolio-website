@@ -181,21 +181,21 @@ label {
 
 /* scroll bar */
 ::-webkit-scrollbar {
-    width: 20px;
-  
-  }
-  
-  ::-webkit-scrollbar-track {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
     border-radius: 20px;
-  
-  }
-  
-  ::-webkit-scrollbar-thumb {
+
+}
+
+::-webkit-scrollbar-thumb {
     background: var(--toggler-color);
     border: 1px solid #ffffff;
     border-radius: 20px;
     transition-duration: 0.4s;
-  }
+}
 
 /* menu */
 .wrapper {
@@ -391,7 +391,23 @@ label {
     height: 400px;
     width: 400px;
     filter: drop-shadow(2px 1px 25px #767373);
+}
 
+.soc-icons {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    z-index: 10000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10%;
+    top: 10px;
+}
+
+.soc-link {
+    height: 200px;
+    width: 200px;
 }
 
 /* skills */
@@ -708,6 +724,10 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.rights {
+    margin-top: 50px;
 }
 
 
