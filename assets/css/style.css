@@ -378,6 +378,10 @@ label {
 }
 
 /* skills */
+#skills h2 {
+    margin-top: 20px;
+}
+
 .skills-container {
     height: 800px;
     width: 1200px;
@@ -386,7 +390,6 @@ label {
     justify-content: center;
     align-items: center;
 }
-
 
 
 .snail {
@@ -442,55 +445,55 @@ label {
 
 
 .html {
-    height: 180px;
-    width: 180px;
-    top: 5%;
+    height: 150px;
+    width: 150px;
+    top: 10%;
     left: 25%;
     -webkit-animation: vibrate-1 0.5s linear infinite both;
     animation: vibrate-1 0.5s linear infinite both;
 }
 
 .github {
-    height: 220px;
-    width: 220px;
-    bottom: 100px;
-    right: -10px;
+    height: 180px;
+    width: 180px;
+    bottom: 10%;
+    right: 7%;
     -webkit-animation: vibrate-1 1s linear infinite both;
     animation: vibrate-1 1s linear infinite both;
 }
 
 .django {
-    height: 250px;
-    width: 250px;
-    top: 17%;
-    right: 5%;
+    height: 200px;
+    width: 200px;
+    top: 25%;
+    right: 10%;
     -webkit-animation: vibrate-1 .5s linear infinite both;
     animation: vibrate-1 .5s linear infinite both;
 }
 
 .js {
-    height: 200px;
-    width: 200px;
-    top: 64%;
-    left: 0;
+    height: 180px;
+    width: 180px;
+    top: 68%;
+    left: 10%;
     -webkit-animation: vibrate-1 .8s linear infinite both;
     animation: vibrate-1 .8s linear infinite both;
 }
 
 .postgress {
-    height: 200px;
-    width: 200px;
-    top: 3%;
+    height: 190px;
+    width: 190px;
+    top: 8%;
     right: 30%;
     -webkit-animation: vibrate-1 1.2s linear infinite both;
     animation: vibrate-1 1.2s linear infinite both;
 }
 
 .python {
-    height: 250px;
-    width: 250px;
-    top: 26%;
-    left: 2%;
+    height: 200px;
+    width: 200px;
+    top: 34%;
+    left: 8%;
     -webkit-animation: vibrate-1 2s linear infinite both;
     animation: vibrate-1 2s linear infinite both;
 }
@@ -538,16 +541,16 @@ label {
     min-height: 100vh;
     position: relative;
 }
- 
+
 #projects h2 {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 150px;
     height: 100%;
 }
