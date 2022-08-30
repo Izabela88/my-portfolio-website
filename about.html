@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="portfolio, full stack developer, developer, united kingdom, wolverhampton" />
+    <meta name="theme-color" content="#F6A50C" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>P O R T F O L I O</title>
+</head>
+
+<body>
+    <!-- https://codepen.io/CiTA/pen/bgjKKE   -->
+    <!-- menu -->
+    <div class="wrapper">
+        <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true" />
+        <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="true"
+            aria-expanded="false" aria-label="Navigation button">
+            <span class="menu-toggler__line"></span>
+            <span class="menu-toggler__line"></span>
+            <span class="menu-toggler__line"></span>
+        </label>
+        <nav id="sidebar" class="sidebar" role="navigation" aria-labelledby="menuTogglerLabel">
+            <ul id="menubar" class="menu" role="menubar" aria-orientation="vertical">
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="index.html"
+                        role="menuitem">Home</a>
+                </li>
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="index.html#projects"
+                        role="menuitem" tabindex="-1">Portfolio</a>
+                </li>
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="index.html#skills"
+                        role="menuitem" tabindex="-1">Skills</a></li>
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="about.html"
+                        role="menuitem">About</a>
+                </li>
+                <li class="menu__item" role"none"><a class="close-sidebar menu__link" href="about.html" role="menuitem"
+                        tabindex="-1">Check CV</a></li>
+            </ul>
+        </nav>
+        <!-- about -->
+        <section id="about" class="section">
+            <h2>about me</h2>
+
+            <div class="container">
+                <div class="half">
+                    <p>I'm self-taught.</p>
+                    <p>I started learning coding at the end of 2019.</p>
+                    <p>2021/2022 was a key time for me.</p>
+                    <p>I have obtained a Diploma in Software Development (E-commerce Applications) with Code Institute.
+                    </p>
+                    <p>Code Institute’s Diploma in Full Stack Software Development is an intense and rewarding coding
+                        bootcamp created and validated by tech industry experts and academics.</p>
+                    <p>During the bootcamp, I made five projects myself, which you can see in the <a
+                            href="index.html#projects">projects</a> section.</p>
+                    <p>During the course I got to know Python and I like this programming language the most.</p>
+                    <p>My biggest dream?</p>
+                    <p>Work in a professional team where I could further develop my programming skills.</p>
+                    <a class="cv" href="#" download>download my CV</a>
+                </div>
+                <div class="half-two">
+                    <div class="me-img">
+                        <img src="/assets/images/jelly-yellow-round-character-with-hands-up.png" alt="Author picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Illustrations from
+            <a target="_blank" href="https://icons8.com/illustrations/style--jelly">Icons 8 Ouch</a>
+        </p>
+        <p>Social icons from <a target="_blank" href="https://icons8.com/">Icons 8</a></p>
+        <p>Skills icons from <a target="_blank" href="https://www.flaticon.com/">Freepik - Flaticon</a></p>
+        <p class="rights">
+            Izabela Krupinska &copy;
+            <span id="copyright">
+                <script>
+                    document
+                        .getElementById("copyright")
+                        .appendChild(document.createTextNode(new Date().getFullYear()));
+                </script>
+            </span>
+            All Rights Reserved
+        </p>
+    </footer>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/parallax.js"></script>
+</body>
+
+</html>
