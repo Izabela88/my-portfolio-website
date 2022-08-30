@@ -333,27 +333,38 @@ label {
 /* hero */
 .main-txt {
     font-family: var(--text-2);
-    padding: 77px;
     width: 70%;
     position: relative;
-    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .main-txt p {
-    font-size: 60px;
+    font-size: 65px;
     text-transform: uppercase;
-    line-height: 55px;
+    line-height: 60px;
     letter-spacing: 3px;
     position: relative;
-    ;
+    text-align: left;
 
 }
 
-.main-txt a {
+.main-links {
     font-family: var(--text);
     font-size: 30px;
     position: relative;
     text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: var(--text-2);
+    justify-content: left;
+}
+
+.main-links a {
+    margin-right: 20px;
 }
 
 .logo {
@@ -775,11 +786,12 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .half-two {
     width: 40%;
+    margin-top: 70px;
 }
 
 .half p {
