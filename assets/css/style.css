@@ -764,7 +764,6 @@ footer {
 
 .me-img {
     width: 500px;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -780,12 +779,11 @@ footer {
 
 .half {
     width: 50%;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 12px;
     margin-top: 80px;
 }
 
@@ -796,8 +794,8 @@ footer {
 
 .half p {
     font-family: var(--text);
-    line-height: 30px;
-    letter-spacing: 2px;
+    line-height: 23px;
+    letter-spacing: 1px;
     text-align: center;
     font-size: 18px;
 }
