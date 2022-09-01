@@ -340,7 +340,6 @@ label {
 /* hero */
 .main-txt {
     font-family: var(--text-2);
-    width: 70%;
     position: relative;
     display: flex;
     align-items: center;
@@ -412,8 +411,6 @@ label {
 }
 
 .soc-icons {
-    width: 400px;
-    height: 200px;
     position: absolute;
     z-index: 10000;
     display: flex;
@@ -743,7 +740,7 @@ label {
 }
 
 /* footer */
-footer {
+.footer {
     height: 200px;
     text-align: center;
     font-family: var(--text);
@@ -752,6 +749,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     border: 1px solid var(--link);
+    position: relative;
 }
 
 .rights {
@@ -763,10 +761,21 @@ footer {
 #about {
     position: relative;
     height: 100vh;
+    margin-top: -100vh;
 }
 
 #about h2 {
     top: 10%;
+}
+
+.about-txt {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .me-img {
@@ -785,17 +794,12 @@ footer {
 }
 
 .half {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
+    width: 65%;
     margin-top: 80px;
 }
 
 .half-two {
-    width: 40%;
+    width: 35%;
     margin-top: 70px;
 }
 
@@ -826,7 +830,7 @@ footer {
     font-family: var(--text-2);
     text-transform: uppercase;
     top: 2%;
-    left: 10%;
+    left: 10px;
     position: absolute;
 }
 
@@ -1063,7 +1067,7 @@ footer {
 
     .s-snail {
         width: 100%;
-        height: 245px;
+        height: auto;
     }
 
     .s-bulb {
@@ -1103,6 +1107,22 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+    #skills h2, #projects h2, #about h2 {
+        font-size: 30px;
+    }
+    #skills h2 {
+        margin-top: 30px;
+    }
+
+    #about {
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    .soc-icons {
+        left: 50%;
+        transform: translate(-50%, 7%);
+    }
 
     .container .main-txt p {
         font-size: 20px;
@@ -1119,14 +1139,104 @@ footer {
 
     .half {
         width: 95%;
+        max-height: 1000px;
     }
 
     #about h2 {
-        margin-top: 35px;
+        margin-top: 126px;
+        margin-bottom: -95px;
+        position: relative;
     }
+    
 
     .menu__link {
         font-size: 40px;
         line-height: 60px;
+    }
+
+    .icon {
+        height: 200px;
+        width: 200px;
+    }
+
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .bck-link {
+        top: -5%;
+    }
+
+    .skills-container,
+    .snail {
+        width: 300px;
+    }
+
+    .s-bulb {
+        height: 70px;
+        left: 43px;
+        top: 353px;
+    }
+
+    .s-lines {
+        height: 41px;
+        left: 0px;
+        top: 299px;
+    }
+
+    .css {
+        height: 75px;
+        width: 75px;
+        top: 27%;
+        left: 30%;
+    }
+    
+    
+    .html {
+        height: 80px;
+        width: 80px;
+        top: 15%;
+        left: 7%;
+    }
+    
+    .github {
+        height: 70px;
+        width: 70px;
+        bottom: 35%;
+        right: 35%;
+    }
+    
+    .django {
+        height: 80px;
+        width: 80px;
+        top: 24%;
+        right: 12%;
+    }
+    
+    .js {
+        height: 90px;
+        width: 90px;
+        top: 9%;
+        left: 41%;
+    }
+    
+    .postgress {
+        height: 75px;
+        width: 75px;
+        top: 39%;
+        right: 9%;
+    }
+    
+    .python {
+        height: 90px;
+        width: 90px;
+        top: 38%;
+        left: 10%;
+    }
+
+    .logo {
+        height: 100px;
+        width: 100px;
     }
 }
