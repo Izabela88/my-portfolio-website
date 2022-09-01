@@ -8,9 +8,11 @@ const skillsSnail = document.getElementById("s-snail");
 window.addEventListener("scroll", function () {
   var value = this.window.scrollY;
 
-  sun.style.left = -value * 1 + "px";
-  monster.style.left = -value * 0.5 + "px";
-  text.style.top = -value * 1 + "px";
-  logo.style.top = -value * 1 + "px";
-  snail.style.bottom = -value * 0.5 + "px";
+  if (sun && monster && text && logo && snail) {
+    sun.style.left = -value * 1 + "px";
+    monster.style.left = -value * 0.5 + "px";
+    text.style.top = -value * 1 + "px";
+    logo.style.top = -value * 1 + "px";
+    snail.style.bottom = -value * 0.5 + "px";
+  }
 });

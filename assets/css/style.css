@@ -3,6 +3,7 @@
 :root {
     --sidebar-width: 100%;
     --toggler-size: 50px;
+    --toggler-size-two: 30px;
     --toggler-line-number: 3;
     --toggler-line-size: calc(var(--toggler-size) / (var(--toggler-line-number) + var(--toggler-line-number) - 1));
     --toggler-offset-left: 10px;
@@ -152,7 +153,7 @@ label {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     height: 100%;
     display: flex;
     position: relative;
@@ -180,6 +181,8 @@ label {
     font-size: 85px;
     z-index: 100;
     letter-spacing: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 /* scroll bar */
@@ -236,6 +239,7 @@ label {
 
 .menu {
     list-style-type: none;
+    text-align: center;
 }
 
 .menu__link {
@@ -836,7 +840,9 @@ footer {
     }
 
     .container .main-txt p {
-        font-size: 50px;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 1px;
     }
 
     .menu__link {
@@ -848,9 +854,13 @@ footer {
         display: none;
     }
 
+    .soc-icons {
+        right: 2%;
+    }
+
     .soc-icons .soc-link {
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 120px;
     }
 
     #skills h2, #projects h2, #about h2 {
@@ -888,10 +898,10 @@ footer {
     }
     
     .django {
-        height: 150px;
-        width: 150px;
+        height: 115px;
+        width: 115px;
         top: 25%;
-        right: 10%;
+        right: 15%;
     }
     
     .js {
@@ -905,14 +915,14 @@ footer {
         height: 140px;
         width: 140px;
         top: 8%;
-        right: 30%;
+        right: 33%;
     }
     
     .python {
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 120px;
         top: 25%;
-        left: 3%;
+        left: 10%;
     }
 
     .s-bulb {
@@ -935,14 +945,21 @@ footer {
         display: none;
     }
 
-
+    .half {
+        width: 80%;
+        padding: 30px;
+    }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 930px) {
 
     /* home */
     .hero-img-two {
         display: none;
+    }
+
+    .main-txt {
+        width: 90%;
     }
 
     .icon {
@@ -950,34 +967,166 @@ footer {
         width: 300px;
     }
 
-    .main-txt {
-        width: 90%;
+    .soc-icons {
+        top: 15%;
     }
 
-    .main-txt p {
-        font-size: 35px;
-        letter-spacing: 2px;
+    .skills-container {
+        width: 500px;
     }
 
-    .main-txt a {
-        font-size: 30px;
+    .css {
+        height: 80px;
+        width: 80px;
+        top: 30%;
+        left: 33%;
     }
+    
+    
+    .html {
+        height: 80px;
+        width: 80px;
+        top: 10%;
+        left: 7%;
+    }
+    
+    .github {
+        height: 105px;
+        width: 105px;
+        bottom: 44%;
+        right: 35%;
+    }
+    
+    .django {
+        height: 85px;
+        width: 85px;
+        top: 25%;
+        right: 19%;
+    }
+    
+    .js {
+        height: 90px;
+        width: 90px;
+        top: 5%;
+        left: 57%;
+    }
+    
+    .postgress {
+        height: 110px;
+        width: 110px;
+        top: 8%;
+        right: 50%;
+    }
+    
+    .python {
+        height: 90px;
+        width: 90px;
+        top: 25%;
+        left: 0;
+    }
+
+    .django img {
+        transform: rotate(2deg);
+    }
+
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
-    /* home */
-    .main-txt p {
-        font-size: 20px;
-        line-height: 45px;
+    .container .main-txt p {
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: 1px;
     }
 
-    .main-txt a {
+    .main-links {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    #skills h2, #projects h2, #about h2 {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+
+    .skills-container {
+        width: 400px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .snail {
+        width: 400px;
+    }
+
+    .s-snail {
+        width: 100%;
+        height: 245px;
+    }
+
+    .s-bulb {
+        height: 89px;
+        left: 65px;
+        top: 272px;
+    }
+
+    .s-lines {
+        height: 50px;
+        left: 10px;
+        top: 205px;
+    }
+
+    .github {
+        right: 24%;
+    }
+
+    .js {
+        top: 5%;
+        left: 65%;
+    }
+
+    .django {
+        right: 8%;
+    }
+
+    .postgress {
+        top: 11%;
+        right: 38%;
+    }
+
+    .half p {
         font-size: 15px;
     }
 
-    .icon {
-        left: unset;
+}
+
+@media screen and (max-width: 550px) {
+
+    .container .main-txt p {
+        font-size: 20px;
+        line-height: 26px;
     }
 
+    .main-links {
+        font-size: 15px;
+    }
+
+    .cv {
+        font-size: 20px;
+    }
+
+    .half {
+        width: 95%;
+    }
+
+    #about h2 {
+        margin-top: 35px;
+    }
+
+    .menu__link {
+        font-size: 40px;
+        line-height: 60px;
+    }
 }
