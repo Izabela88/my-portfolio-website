@@ -1,3 +1,5 @@
+@import url("mediaqueries.css");
+
 :root {
     --sidebar-width: 100%;
     --toggler-size: 50px;
@@ -127,6 +129,7 @@ a {
     -webkit-tap-highlight-color: transparent;
     color: var(--link);
     transition-duration: .3s;
+    cursor: pointer;
 }
 
 a:hover {
@@ -815,9 +818,16 @@ footer {
     font-size: 35px;
 }
 
+.bck-link {
+    font-family: var(--text-2);
+    text-transform: uppercase;
+    top: 2%;
+    left: 10%;
+    position: absolute;
+}
+
 
 @media screen and (max-width: 1190px) {
-
     /* home */
     .main-txt {
         padding: 10px;
@@ -825,7 +835,7 @@ footer {
         background-color: rgb(255 255 255 / 50%);
     }
 
-    .main-txt p {
+    .container .main-txt p {
         font-size: 50px;
     }
 
@@ -837,6 +847,95 @@ footer {
     .hero-img {
         display: none;
     }
+
+    .soc-icons .soc-link {
+        height: 150px;
+        width: 150px;
+    }
+
+    #skills h2, #projects h2, #about h2 {
+        font-size: 60px;
+    }
+
+    .skills-container {
+        width: 900px;
+    }
+
+    .s-snail {
+        height: 300px;
+    }
+
+    .css {
+        height: 100px;
+        width: 100px;
+        top: 33%;
+        left: 50%;
+    }
+    
+    
+    .html {
+        height: 100px;
+        width: 100px;
+        top: 10%;
+        left: 30%;
+    }
+    
+    .github {
+        height: 120px;
+        width: 120px;
+        bottom: 28%;
+        right: 17%;
+    }
+    
+    .django {
+        height: 150px;
+        width: 150px;
+        top: 25%;
+        right: 10%;
+    }
+    
+    .js {
+        height: 120px;
+        width: 120px;
+        top: 56%;
+        left: 10%;
+    }
+    
+    .postgress {
+        height: 140px;
+        width: 140px;
+        top: 8%;
+        right: 30%;
+    }
+    
+    .python {
+        height: 150px;
+        width: 150px;
+        top: 25%;
+        left: 3%;
+    }
+
+    .s-bulb {
+        height: 110px;
+        left: 90px;
+        top: 212px;
+    }
+
+    .s-lines {
+        height: 66px;
+        left: 25px;
+        top: 132px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .half-two {
+        display: none;
+    }
+
+
 }
 
 @media screen and (max-width: 800px) {
