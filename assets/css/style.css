@@ -758,6 +758,11 @@ label {
     transition: ease-out 0.3s;
 }
 
+.card__infoicon img {
+    height: 35px;
+
+}
+
 .card__description {
     margin: auto;
     font-size: 15px;
