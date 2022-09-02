@@ -1248,6 +1248,10 @@ label {
         width: 300px;
     }
 
+    .skills-container {
+        height: 595px;
+    }
+
     .s-bulb {
         height: 70px;
         left: 43px;
