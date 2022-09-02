@@ -1319,3 +1319,48 @@ label {
         width: 100px;
     }
 }
+
+
+@media screen and (max-width: 1300px) {
+    @media screen and (max-height: 805px) {
+        .main-txt {
+            width: 65%;
+        }
+
+        .main-txt p {
+            font-size: 45px;
+            line-height: 50px;
+            letter-spacing: 2px;
+        }
+
+        #skills h2,
+        #projects h2,
+        #about h2 {
+            font-size: 70px;
+        }
+
+        .s-snail {
+            height: 350px;
+        }
+
+        .s-bulb {
+            height: 135px;
+            left: 85px;
+            top: 133px;
+        }
+
+        .s-lines {
+            height: 80px;
+            left: 0px;
+            top: 42px;
+            transform: rotate(341deg);
+            filter: drop-shadow(0px 0px 10px #767373);
+        }
+
+        .postgress {
+            height: 150px;
+            width: 150px;
+            top: 11%;
+        }
+    }
+}
