@@ -10,8 +10,8 @@
     --toggler-offset-top: 10px;
     --toggler-color: #F6A50C;
     --toggler-color-hover: Wheat;
-    --text: 'Righteous', cursive;
-    --text-2: 'Fredericka the Great', cursive;
+    --text:  'Itim', cursive;
+    --text-2: 'Dokdo', cursive;
     --link: #F6A50C;
     --blue: #71d2e1;
     --black: #000000
@@ -180,7 +180,7 @@ label {
     transform: translate(-50%, -50%);
     font-size: 85px;
     z-index: 100;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     width: 100%;
     text-align: center;
 }
@@ -247,9 +247,9 @@ label {
     font-weight: 100;
     text-decoration: none;
     font-size: 10vmin;
-    line-height: 15vmin;
     transition: all 0.25s ease-out;
-    font-family: var(--text);
+    font-family: var(--text-2);
+    text-transform: uppercase;
 }
 
 .menu__link:hover,
@@ -348,10 +348,9 @@ label {
 }
 
 .main-txt p {
-    font-size: 59px;
+    font-size: 72px;
     text-transform: uppercase;
     line-height: 60px;
-    letter-spacing: 3px;
     position: relative;
     text-align: center;
 
@@ -359,7 +358,7 @@ label {
 
 .main-links {
     font-family: var(--text);
-    font-size: 30px;
+    font-size: 40px;
     position: relative;
     text-transform: uppercase;
     width: 100%;
@@ -370,7 +369,8 @@ label {
 }
 
 .main-links a {
-    margin-right: 20px;
+    margin-right: 40px;
+    font-family: 'Dokdo', cursive;
 }
 
 .logo {
@@ -686,8 +686,8 @@ label {
     letter-spacing: 1px;
     color: #fff;
     margin: 20px;
-    font-family: var(--text);
-    font-size: 25px;
+    font-family: var(--text-2);
+    font-size: 30px;
 }
 
 .card .contentBx .live-link,
@@ -729,6 +729,7 @@ label {
     font-family: var(--text);
     width: 200px;
     height: 50px;
+    text-transform: uppercase;
 
 }
 
@@ -875,11 +876,11 @@ label {
     line-height: 23px;
     letter-spacing: 1px;
     text-align: center;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .half a {
-    font-family: var(--text);
+    font-family: var(--text-2);
 
 }
 
@@ -899,6 +900,7 @@ label {
     top: 2%;
     left: 10px;
     position: absolute;
+    font-size: 25px;
 }
 
 
@@ -909,9 +911,27 @@ label {
         }
 
         .main-txt p {
-            font-size: 45px;
+            font-size: 55px;
             line-height: 50px;
             letter-spacing: 2px;
+        }
+
+        .soc-link {
+            height: 160px;
+            width: 160px;
+        }
+
+        .half p {
+            line-height: 18px;
+        }
+
+        .hero-img {
+            height: 400px;
+        }
+
+        .icon {
+            height: 320px;
+            width: 320px;
         }
 
         #skills h2,
@@ -957,9 +977,8 @@ label {
     }
 
     .container .main-txt p {
-        font-size: 40px;
+        font-size: 60px;
         line-height: 48px;
-        letter-spacing: 1px;
     }
 
     .menu__link {
@@ -1153,13 +1172,13 @@ label {
 @media screen and (max-width: 700px) {
 
     .container .main-txt p {
-        font-size: 36px;
+        font-size: 46px;
         line-height: 36px;
         letter-spacing: 1px;
     }
 
     .main-links {
-        font-size: 20px;
+        font-size: 32px;
         margin-top: 20px;
     }
 
@@ -1250,16 +1269,21 @@ label {
     }
 
     .container .main-txt p {
-        font-size: 20px;
+        font-size: 28px;
         line-height: 26px;
     }
 
     .main-links {
-        font-size: 15px;
+        font-size: 25px;
+        flex-direction: column;
+    }
+
+    .main-links a {
+        margin: auto;
     }
 
     .cv {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .half {
