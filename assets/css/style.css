@@ -874,13 +874,20 @@ label {
     margin-top: 70px;
 }
 
-.half p {
+.half p, ol, li {
     font-family: var(--text);
-    line-height: 23px;
     letter-spacing: 1px;
-    text-align: center;
     font-size: 19px;
 }
+
+.half p {
+    text-align: center;
+}
+
+.half ol {
+    line-height: 30px;
+}
+
 
 .half a:hover {
     color: var(--blue);
@@ -920,7 +927,7 @@ label {
             width: 160px;
         }
 
-        .half p {
+        .half p, ol {
             line-height: 18px;
         }
 
@@ -1244,8 +1251,17 @@ label {
         right: 38%;
     }
 
-    .half p {
+    .half {
+        margin-bottom: 80px;
+
+    }
+
+    .half p, ol, li {
         font-size: 15px;
+    }
+
+    .half ol {
+        line-height: 25px;
     }
 
 }
