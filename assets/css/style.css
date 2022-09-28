@@ -277,7 +277,7 @@ label {
 
 .menu-toggler__line {
     height: var(--toggler-line-size);
-    background: var(--toggler-color);
+    background: var(--toggler-color-hover);
     position: absolute;
     border-radius: calc(var(--toggler-line-size) / 2);
     left: 0;
@@ -353,6 +353,7 @@ label {
     line-height: 60px;
     position: relative;
     text-align: center;
+    letter-spacing: 0;
 
 }
 
