@@ -283,6 +283,7 @@ label {
     left: 0;
     right: 0;
     transition: all 0.25s ease-out;
+    border: 1px solid black;
 }
 
 .menu-toggler__line:nth-child(1) {
