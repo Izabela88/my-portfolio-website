@@ -344,13 +344,14 @@ label {
     height: 100vh;
     width: 100%;
     background-color: #71d2e1;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    z-index: 10000000000;
 }
 
 .intro-text {
@@ -387,6 +388,8 @@ label {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
+
 }
 
 .main-txt p {
@@ -396,6 +399,7 @@ label {
     position: relative;
     text-align: center;
     letter-spacing: 0;
+
 }
 
 .main-links {
@@ -408,6 +412,7 @@ label {
     align-items: center;
     font-family: var(--text-2);
     justify-content: center;
+    overflow: hidden;
 }
 
 .main-links a {
