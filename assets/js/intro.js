@@ -2,7 +2,12 @@ const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 tl.to(".intro-img", { y: "0%", duration: 2 });
 tl.to(".text", { y: "0%", duration: 2 }, "-=0.75");
-tl.to(".intro", { y: "0%", duration: 1.5, delay: 1, opacity: 0 });
+tl.to(".intro", {
+  y: "0%",
+  duration: 1.5,
+  delay: 1,
+  opacity: 0,
+});
 
 tl.fromTo(
   ".hero-img-two",

@@ -344,7 +344,6 @@ label {
     min-height: 100vh;
     width: 100%;
     background-color: #71d2e1;
-    z-index: 10000000;
     position: fixed;
     top: 0;
     left: 0;
