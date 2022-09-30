@@ -78,4 +78,5 @@ if (firstVisit == null) {
   localStorage.setItem("visited", 1);
 } else {
   removeLoader();
+  localStorage.clear();
 }
