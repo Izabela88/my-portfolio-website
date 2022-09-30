@@ -341,10 +341,10 @@ label {
 
 /* intro */
 .intro {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-color: #71d2e1;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -1237,6 +1237,10 @@ label {
     .main-links {
         font-size: 32px;
         margin-top: 20px;
+    }
+
+    .main-txt {
+        background: transparent;
     }
 
     #skills h2,
