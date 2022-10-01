@@ -1339,6 +1339,10 @@ label {
 
 @media screen and (max-width: 550px) {
 
+    .wrapper {
+        overflow: unset;
+    }
+
     #skills h2,
     #projects h2,
     #about h2 {
