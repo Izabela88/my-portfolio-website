@@ -1341,6 +1341,7 @@ label {
 
     .wrapper {
         overflow: unset;
+        position: unset;
     }
 
     #skills h2,
