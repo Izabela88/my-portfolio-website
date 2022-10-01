@@ -207,7 +207,10 @@ label {
 .wrapper {
     display: flex;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .sidebar,
@@ -235,6 +238,8 @@ label {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow-y: hidden;
+    overflow-y: hidden;
 }
 
 .menu {
@@ -354,9 +359,24 @@ label {
     z-index: 10000000000;
 }
 
+.intro-img {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .intro-text {
     color: #f2e2e2;
-    font-family: var(--text-2);
+    font-family: var(--text);
     text-align: center;
     margin: auto;
     display: flex;
@@ -431,11 +451,12 @@ label {
 .hero-img {
     position: absolute;
     height: 600px;
-    right: 0;
+    right: -74px;
     bottom: 0;
     z-index: 0;
     width: auto;
     filter: drop-shadow(2px 1px 25px #767373);
+    transform: rotate(344deg);
 }
 
 .hero-img-two {
@@ -1469,7 +1490,7 @@ label {
         width: 100px;
     }
 
-    .intro-img img {
+    .intro-img {
         height: 300px;
         width: 300px;
     }

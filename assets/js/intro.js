@@ -73,10 +73,13 @@ function removeLoader() {
   intro.style.display = "none";
 }
 
-if (firstVisit == null) {
-  window.addEventListener("load", loadAnimation);
-  localStorage.setItem("visited", 1);
-} else {
-  removeLoader();
-  localStorage.clear();
-}
+window.addEventListener("load", () => {
+  let session = sessionStorage.getItem("register");
+  sessionStorage.setItem("register", 1);
+
+  if (session == null) {
+    loadAnimation();
+  } else {
+    removeLoader();
+  }
+});
