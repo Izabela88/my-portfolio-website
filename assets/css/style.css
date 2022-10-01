@@ -238,8 +238,6 @@ label {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow-y: hidden;
-    overflow-y: hidden;
 }
 
 .menu {
@@ -1400,8 +1398,8 @@ label {
     }
 
     .icon {
-        height: 200px;
-        width: 200px;
+        height: 220px;
+        width: 220px;
     }
 
 
