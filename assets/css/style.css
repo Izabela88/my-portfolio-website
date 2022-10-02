@@ -932,8 +932,9 @@ label {
 }
 
 .half {
-    width: 78%;
+    width: 100%;
     margin-top: 80px;
+    padding: 25px;
 }
 
 .half-two {
@@ -944,7 +945,7 @@ label {
 .half p, ol, li {
     font-family: var(--text);
     letter-spacing: 1px;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .half p {
@@ -952,7 +953,19 @@ label {
 }
 
 .half ol {
-    line-height: 30px;
+    line-height: 25px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.half ol .title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.half li {
+    text-align: left;
 }
 
 
@@ -1332,7 +1345,7 @@ label {
     }
 
     .half ol {
-        line-height: 25px;
+        line-height: 22px;
     }
 
 }

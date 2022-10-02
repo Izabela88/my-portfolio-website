@@ -14,17 +14,19 @@ function loadAnimation() {
     },
     "-=1"
   );
+  tl.fromTo(
+    "#menuTogglerLabel",
+    { opacity: 0 },
+    { opacity: 1, duration: 0.45, delay: 0.1 },
+    "-=0.5"
+  );
 
   tl.fromTo(
     ".hero-img-two",
     { opacity: 0 },
-    { opacity: 1, duration: 0.25, delay: 0.1 }
-  );
-  tl.fromTo(
-    "#menuTogglerLabel",
-    { opacity: 0 },
     { opacity: 1, duration: 0.25, delay: 0.11 }
   );
+
   tl.fromTo(
     ".icon",
     { opacity: 0 },
