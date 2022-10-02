@@ -391,7 +391,7 @@ label {
 
 .hide .text {
     display: inline-block;
-    transform: translateY(-150%);
+    transform: translateY(-200%);
 }
 
 .hide .intro-img {
@@ -1513,7 +1513,7 @@ label {
     }
 
     .hide span {
-        font-size: 30px;
+        font-size: 20px;
     }
 
 }
