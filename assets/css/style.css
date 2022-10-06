@@ -921,7 +921,7 @@ label {
     border-radius: 50%;
     position: absolute;
     z-index: -1;
-    bottom: -7%;
+    bottom: 0;
     right: -15%;
 }
 
@@ -929,6 +929,7 @@ label {
     position: absolute;
     filter: drop-shadow(2px 1px 5px #000000);
     height: 600px;
+    bottom: -368px;
 }
 
 .half {
