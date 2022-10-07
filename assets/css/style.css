@@ -250,7 +250,7 @@ label {
     color: white;
     font-weight: 100;
     text-decoration: none;
-    font-size: 10vmin;
+    font-size: 60px;
     transition: all 0.25s ease-out;
     font-family: var(--text-2);
     text-transform: uppercase;
@@ -897,6 +897,7 @@ label {
     height: 100vh;
     margin-top: -100vh;
     overflow: hidden;
+
 }
 
 #about h2 {
@@ -1004,6 +1005,67 @@ label {
     left: 10px;
     position: absolute;
     font-size: 25px;
+}
+
+@media only screen and (min-width: 2000px){
+    @media screen and (min-height: 929px) {
+        .menu__link {
+            font-size: 80px;
+        }
+
+        #projects {
+            height: 100vh;
+        }
+
+        .projects-container {
+            height: unset;
+        }
+
+        .hero-img {
+            height: 800px;
+        }
+
+        .hero-img-two {
+            height: 600px;
+        }
+
+        .icon {
+            height: 500px;
+            width: 500px;
+        }
+
+        .soc-link {
+            height: 300px;
+            width: 300px;
+        }
+
+        .logo {
+            height: 250px;
+            width: 250px;
+        }
+
+        .main-txt p {
+            font-size: 97px;
+            line-height: 69px;
+        }
+
+        .main-links {
+            font-size: 55px;
+        }
+
+        #skills h2, #projects h2, #about h2 {
+            font-size: 100px;
+        }
+
+        .half p, ol, li {
+            font-size: 23px;
+        }
+
+        .cv {
+            margin-top: 42px;
+            font-size: 44px;
+        }
+    }
 }
 
 
