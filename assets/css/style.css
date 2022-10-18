@@ -1479,6 +1479,14 @@ label {
         position: unset;
     }
 
+    .soc-icons {
+        top: 15%;
+    }
+
+    .main-txt {
+        width: 90%;
+    }
+
     #skills h2,
     #projects h2,
     #about h2 {
