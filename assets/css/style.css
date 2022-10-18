@@ -885,8 +885,8 @@ label {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid var(--link);
     position: relative;
+    background: linear-gradient(0deg, #71d2e1 0%, #ffffff 100%)
 }
 
 .rights {
