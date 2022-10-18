@@ -207,7 +207,6 @@ label {
 .wrapper {
     display: flex;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -347,7 +346,7 @@ label {
 .intro {
     height: 100vh;
     width: 100%;
-    background-color: #71d2e1;
+    background: linear-gradient(180deg, #71d2e1 0%, #ffffff 100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -374,7 +373,7 @@ label {
 }
 
 .intro-text {
-    color: #f2e2e2;
+    color: #000000;
     font-family: var(--text);
     text-align: center;
     margin: auto;
@@ -385,7 +384,6 @@ label {
 }
 
 .hide {
-    background: #71d2e1;
     overflow: hidden;
 }
 
@@ -400,6 +398,11 @@ label {
 
 
 /* hero */
+
+#home {
+    background: linear-gradient(180deg, #71d2e1 0%, #ffffff 100%)
+}
+
 .main-txt {
     font-family: var(--text-2);
     position: relative;
@@ -1304,7 +1307,11 @@ label {
     }
 
     .main-txt {
-        width: 90%;
+        width: 80%;
+    }
+
+    .container .main-txt p {
+        font-size: 50px;
     }
 
     .icon {
@@ -1313,8 +1320,11 @@ label {
     }
 
     .soc-icons {
-        top: 15%;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 7%);
     }
+
 
     .skills-container {
         width: 500px;
@@ -1488,10 +1498,6 @@ label {
         min-height: 100vh;
     }
 
-    .soc-icons {
-        left: 50%;
-        transform: translate(-50%, 7%);
-    }
 
     .container .main-txt p {
         font-size: 28px;

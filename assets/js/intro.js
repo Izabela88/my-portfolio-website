@@ -1,5 +1,4 @@
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-const firstVisit = localStorage.getItem("visited");
 
 function loadAnimation() {
   tl.to(".intro-img", { y: "0%", duration: 2 });
@@ -14,6 +13,7 @@ function loadAnimation() {
     },
     "-=1"
   );
+
   tl.fromTo(
     "#menuTogglerLabel",
     { opacity: 0 },
