@@ -720,6 +720,7 @@ label {
     transition: 0.5s;
 }
 
+
 .card:hover .imgBx {
     top: 0%;
     transform: translateY(0%);
@@ -731,9 +732,15 @@ label {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 225px;
+    width: 200px;
     filter: drop-shadow(2px 1px 8px #000000);
 }
+
+
+.card  .imgBx .small-img {
+    width: 250px;
+}
+
 
 .card .contentBx {
     position: absolute;
